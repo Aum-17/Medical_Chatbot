@@ -70,13 +70,13 @@ MISTRALAI_API_KEY="your_mistralai_api_key"
 #### **Step 5: Store Embeddings in Pinecone**
 Run the following command to store embeddings in Pinecone:
 ```bash
-python store_index.py
+python store_index.ipynb
 ```
 
 #### **Step 6: Run the Application**
 Finally, start the chatbot application:
 ```bash
-python app.py
+python app.ipynb
 ```
 
 📌 Future Enhancements
