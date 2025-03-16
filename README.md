@@ -2,6 +2,40 @@
 
 ## End-to-End Medical Chatbot using Generative AI
 
+🏥 AI-Powered Medical Chatbot 🤖💬
+📌 Description
+This AI-powered medical chatbot is designed to provide retrieval-based medical assistance by answering health-related queries using LangChain, Mistral AI, and Pinecone. The chatbot leverages retrieval-augmented generation (RAG) to fetch accurate and relevant medical information from a knowledge base, ensuring reliable responses to user queries.
+
+🔥 Features
+🔍 Retrieval-Augmented Generation (RAG): Enhances response accuracy by retrieving medical data from Pinecone.
+🧠 Mistral AI Integration: Utilizes Mistral AI for generating medical insights.
+📚 LangChain Pipelines: Implements LangChain for structured data retrieval and query processing.
+💾 Pinecone Vector Database: Efficiently stores and fetches relevant medical information.
+🌐 Flask Web Interface: Provides a user-friendly web-based interaction.
+🩺 Medical Query Processing: Understands symptoms, diseases, and general health-related questions.
+
+🏗️ Tech Stack
+- **Python** - Core programming language
+- **LangChain** - For building LLM-based applications
+- **Flask** - Web framework for API and app development
+- **Pinecone** - Vector database for embedding storage
+- **MistralAI** - Large Language Model provider
+- **Hugging Face** - Pre-trained AI models and tools
+- **HTML, CSS, JavaScript** - Frontend technologies for UI/UX
+
+🚀 How It Works
+User inputs a medical query.
+The chatbot retrieves relevant medical documents using Pinecone.
+LangChain processes and structures the retrieved data.
+Mistral AI generates a contextual response based on the retrieved information.
+The chatbot presents a reliable medical response.
+
+📌 Usage
+This chatbot is designed for medical education and awareness purposes only. It does not replace professional medical consultation.
+
+🛠️ Setup & Installation
+🔹 Install dependencies using Conda:
+
 ### How to Run?
 
 #### **Steps to Set Up and Run the Project**
@@ -45,16 +79,10 @@ Finally, start the chatbot application:
 python app.py
 ```
 
----
-
-## **Tech Stack Used**
-- **Python** - Core programming language
-- **LangChain** - For building LLM-based applications
-- **Flask** - Web framework for API and app development
-- **Pinecone** - Vector database for embedding storage
-- **MistralAI** - Large Language Model provider
-- **Hugging Face** - Pre-trained AI models and tools
-- **HTML, CSS, JavaScript** - Frontend technologies for UI/UX
+📌 Future Enhancements
+✅ Integration with Hugging Face medical models
+✅ Support for multilingual medical queries
+✅ Interactive voice-based assistance
 
 ---
 
