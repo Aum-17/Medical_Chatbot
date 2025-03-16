@@ -8,30 +8,40 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f5f5f5;
     color: #333;
-    font-family: 'Poppins', sans-serif;
     -webkit-overflow-scrolling: touch;
+    overflow: hidden; /* Prevents unnecessary scrolling */
 }
 
+/* Background Video */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2c3e50;
-    padding: 5px 20px;
+    background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent */
+    padding: 10px 20px;
     color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    position: relative;  /* Changed to relative */
+    position: relative;
 }
 
 .logo img {
     height: 60px;
     text-align: right;
-    padding-left: 5px;
-    padding-top: 5px;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -53,26 +63,13 @@ nav ul li a:hover, .active {
     color: white;
 }
 
-.btn-primary {
-    background: #0077B6;
-    padding: 12px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.btn-primary:hover {
-    background: #2980b9;
-}
-
 /* Hero Section */
 .hero {
     padding: 60px;
-    background: #E3FDFD;
+    background: rgba(227, 253, 253, 0.8); /* Semi-transparent */
     color: #333;
     border-radius: 0 0 20px 20px;
+    text-align: center;
 }
 
 .hero-content {
@@ -101,6 +98,20 @@ nav ul li a:hover, .active {
     color: #00224D;
 }
 
+.btn-primary {
+    background: #0077B6;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+}
+
 .btn-large {
     font-size: 1.2em;
     padding: 14px 24px;
@@ -112,15 +123,12 @@ nav ul li a:hover, .active {
 .accent {
     color: #F76C6C;
 }
-#about-section {
-    scroll-margin-top: 80px; /* Adjust this value based on your header height */
-}
 
 /* Features Section */
 .features {
     text-align: center;
     padding: 60px;
-    background: #F0F8FF;
+    background: rgba(240, 248, 255, 0.9);
 }
 
 .features h2 {
@@ -151,12 +159,12 @@ nav ul li a:hover, .active {
 
 .icon {
     margin-bottom: 15px;
-    width: 224px;  /* Adjust size */
-    height: 184px; /* Keep aspect ratio */
+    width: 224px;
+    height: 184px;
     display: inline-block;
-    vertical-align: middle; /* Align with text */
-    border: 3px solid #0077B6; /* Change color as needed */
-    border-radius: 10px; /* Optional: Adds rounded corners */
+    vertical-align: middle;
+    border: 3px solid #0077B6;
+    border-radius: 10px;
 }
 
 .feature-card h3 {
@@ -185,40 +193,12 @@ footer {
     color: #3498db;
 }
 
-.about, .services, .contact {
-    color: #f5f5f5;
-}
-#google_translate_element {
-    position: static;
-    margin:0 10px;
-}
-
-.goog-te-gadget {
-    color: white !important;  /* Override Google's default color */
-}
-
-.goog-te-gadget .goog-te-combo {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #fff;
-    background-color: #3498db;
-    color: white;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-}
-
-.goog-te-combo option {
-    background-color: #2c3e50;
-    color: white;
-    padding: 8px;
-}
-
-.goog-te-gadget select {
-    margin: 0;
-    height: 35px;
-}
-
-/* Remove the Google Translate branding text */
-.goog-te-gadget span {
-    display: none;
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
