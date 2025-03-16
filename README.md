@@ -21,7 +21,7 @@ This AI-powered medical chatbot is designed to provide retrieval-based medical a
 - **Pinecone** - Vector database for embedding storage
 - **MistralAI** - Large Language Model provider
 - **Hugging Face** - Pre-trained AI models and tools
-- **HTML, CSS, JavaScript** - Frontend technologies for UI/UX
+- **HTML, CSS, JavaScript** - Frontend technologies for UI/Ux
 
 🚀 How It Works
 User inputs a medical query.
